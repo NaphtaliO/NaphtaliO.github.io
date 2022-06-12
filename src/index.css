@@ -1,13 +1,262 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* color: #999999; */
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.80857;
+  
+}
+ /* background animation */
+
+ @import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+
+ .hero {
+   background-color: #9e5f5a;
+   position: relative;
+   height: 75vh;
+   overflow: hidden;
+   font-family: "Montserrat", sans-serif;
+ }
+
+ .hero__title {
+   color: #fff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 50px;
+   z-index: 1;
+ }
+
+ .cube {
+   position: absolute;
+   top: 80vh;
+   left: 45vw;
+   width: 10px;
+   height: 10px;
+   border: solid 1px #003298;
+   transform-origin: top left;
+   transform: scale(0) rotate(0deg) translate(-50%, -50%);
+   -webkit-animation: cube 12s ease-in forwards infinite;
+   animation: cube 12s ease-in forwards infinite;
+ }
+
+ .cube:nth-child(2n) {
+   border-color: #0051f4;
+ }
+
+ .cube:nth-child(2) {
+   -webkit-animation-delay: 2s;
+   animation-delay: 2s;
+   left: 25vw;
+   top: 40vh;
+ }
+
+ .cube:nth-child(3) {
+   -webkit-animation-delay: 4s;
+   animation-delay: 4s;
+   left: 75vw;
+   top: 50vh;
+ }
+
+ .cube:nth-child(4) {
+   -webkit-animation-delay: 6s;
+   animation-delay: 6s;
+   left: 90vw;
+   top: 10vh;
+ }
+
+ .cube:nth-child(5) {
+   -webkit-animation-delay: 8s;
+   animation-delay: 8s;
+   left: 10vw;
+   top: 85vh;
+ }
+
+ .cube:nth-child(6) {
+   -webkit-animation-delay: 10s;
+   animation-delay: 10s;
+   left: 50vw;
+   top: 10vh;
+ }
+
+ @-webkit-keyframes cube {
+   from {
+     transform: scale(0) rotate(0deg) translate(-50%, -50%);
+     opacity: 1;
+   }
+
+   to {
+     transform: scale(20) rotate(960deg) translate(-50%, -50%);
+     opacity: 0;
+   }
+ }
+
+ @keyframes cube {
+   from {
+     transform: scale(0) rotate(0deg) translate(-50%, -50%);
+     opacity: 1;
+   }
+
+   to {
+     transform: scale(20) rotate(960deg) translate(-50%, -50%);
+     opacity: 0;
+   }
+ }
+
+hr {
+  border: solid 1px black;
+  margin-bottom: 70px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.section-title {
+  text-align: center;
+  margin: 15px 0px;
 }
+
+.avatar {
+  display: block;
+  border-radius: 50%;
+  height: 190px;
+  width: 190px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .col-md-4 {
+  
+}
+
+.col-md-8 {
+} */
+
+.icons{
+  display: block;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.icons a{
+font-size: 40px;
+letter-spacing: 10px;
+
+}
+
+.icons i{
+  color: black;
+}
+
+.btn-link{
+  display: block;
+  text-align: center;
+}
+
+/* .skills img{
+  height: 150px;
+  width: 150px;
+} */
+
+.col-md-4 .inner-box{
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.col-md-4 .align-center {
+  text-align: center;
+}
+
+.col-md-4 .border{
+  border: 1px solid #dee2e6;
+}
+
+.card{
+  width: 20rem;
+}
+
+.content{
+  margin: 0 auto;
+}
+
+.submit-btn{
+  display: block;
+  margin: 0 auto;
+}
+.contact-form{
+  margin: 30px 0px;
+}
+
+.project-title{
+  text-align: center;
+}
+.project-hr{
+  margin: 20px;
+}
+
+/* CONTACT FORM */
+/* END CONTACT FORM */
+
+  /* Footer Styling */
+.footer-basic {
+  padding: 40px 0;
+  background-color: #ffffff;
+  color: #4b4c4d;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social>a {
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social>a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+/* End Footer Styling */
+
