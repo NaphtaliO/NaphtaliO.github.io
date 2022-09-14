@@ -1,0 +1,11 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@include media-breakpoint-up(md) {
+  .card{
+    text-align:start;
+  }
+
+
+}
+
+
