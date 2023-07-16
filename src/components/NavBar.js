@@ -6,7 +6,7 @@ const NavBar = () => {
         <nav className="navbar navbar-expand-lg ">
             <div className="container nav-container">
                 <Link to="/" className='navbar-brand'>
-                    <h2 className='nav-text web-title'>naphtali.me</h2>
+                    <h2 className='nav-text web-title'>naphtali</h2>
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>

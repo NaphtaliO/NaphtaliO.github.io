@@ -34,10 +34,10 @@ const Footer = () => {
                 </div>
             </div> */}
             <div className="copyrights centered">
-                <h2 className='web-title'>naphtali.me</h2>
+                <h2 className='web-title'>naphtali</h2>
                 <p className='copyrights'>&copy; Copyrights <strong>Naphtali</strong> 2022. All Rights Reserved</p>
                 <div className="credits">
-                    <p>Created with React and Bootstrap by <a href="https://naphtali.me" rel="noreferrer noopener" className="link">Naphtali Odinakachi.</a></p>
+                    <p>Created with React and Bootstrap by <a href="https://naphtali-68660.web.app/" rel="noreferrer noopener" className="link">Naphtali Odinakachi.</a></p>
                 </div>
             </div>
         </footer>
